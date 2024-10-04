@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # Копируем содержимое вашего проекта в контейнер
-COPY . .
+COPY . /app
 
 # Устанавливаем зависимости (если есть файл requirements.txt)
 RUN pip install --no-cache-dir -r requirements.txt
