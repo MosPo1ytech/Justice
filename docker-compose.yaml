@@ -2,6 +2,7 @@ version: '3'
 services:
   flaskapp:
     build: .
+    image: stulplay/justice:latest
     ports:
       - "5000:5000"
     depends_on:
@@ -18,7 +19,8 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./std-mysql.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./home/dev/std-mysql.sql:/docker-entrypoint-initdb.d/schema.sql
 
 volumes:
   db_data:
+
