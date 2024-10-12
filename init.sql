@@ -1,1 +1,1 @@
-ALTER USER 'admin'@'%' IDENTIFIED BY 'dev';
+ALTER USER 'root'@'%' IDENTIFIED BY 'dev';
