@@ -6,8 +6,7 @@ import mysql.connector
 app = Flask(__name__)
 
 app.config.from_pyfile('config.py')
-password ="1"
-prin
+
 db = MyDb(app)
 
 login_manager = LoginManager();
